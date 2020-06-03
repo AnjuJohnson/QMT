@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/webviewbg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:paddingRight="5dp"
+        android:id="@+id/juzfrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:paddingLeft="35dp"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/reference"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center|left"
+        android:paddingLeft="35dp"
+        android:text="Reference :"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/red" />
+
+
+
+   <!-- <TextView
+        android:id="@+id/chapternameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:text="TextView"
+        android:paddingLeft="35dp"
+        android:textColor="@color/red"
+       />-->
+
+
+    <!-- <LinearLayout
+         android:id="@+id/refrence"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="28dp"
+         android:orientation="vertical"
+         android:paddingLeft="15dp">
+
+         <androidx.recyclerview.widget.RecyclerView
+             android:background="@color/webviewbg"
+             android:id="@+id/mWordMeaningRecylerView"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+         </androidx.recyclerview.widget.RecyclerView>
+ -->
+    </LinearLayout>
+

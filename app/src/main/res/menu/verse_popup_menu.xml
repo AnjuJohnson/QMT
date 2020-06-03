@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+   <!-- <item
+        android:id="@+id/mNoteView"
+        android:title="Tafseer/note view"
+        />
+    <item
+        android:id="@+id/mBookMark"
+        android:title="Add BookMark" />
+    <item
+        android:id="@+id/mMakeNote"
+        android:title="Make Note" />
+    <item
+        android:id="@+id/mshare"
+        android:title="Share" />-->
+    <item
+        android:id="@+id/mTranslation"
+        android:title="Translation" />
+
+    <item
+        android:id="@+id/mAudioTajweed"
+        android:title="Audio Tajweed" />
+    <item
+        android:id="@+id/mAudioTafseer"
+        android:title="Audio Tafsir" />
+    app:showAsAction="withText"/>
+</menu>

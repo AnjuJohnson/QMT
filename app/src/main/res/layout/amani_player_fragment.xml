@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/drawerbg"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/layer_circle" />
+
+        <TextView
+            android:id="@+id/chapternameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:text="fathiha"
+            android:textColor="@color/white"></TextView>
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="0:00:00"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/chapternametitile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/meaning"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/meaning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/progress"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <SeekBar
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/palyer"
+        android:layout_marginTop="20dp"
+        android:thumbTint="@color/white"
+        android:backgroundTint="@color/white"/>
+
+    <RelativeLayout
+        android:id="@+id/palyer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="100dp"
+
+        android:background="@drawable/audio_bg_card"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/stopimageView"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="40dp"
+android:visibility="gone"
+            android:layout_toLeftOf="@+id/previmageView"
+            app:srcCompat="@drawable/rectangle" />
+
+        <ImageView
+            android:id="@+id/previmageView"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@+id/playbutton"
+            app:srcCompat="@drawable/pre" />
+
+        <ImageView
+            android:id="@+id/playbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/playsmall" />
+
+        <ImageView
+
+            android:id="@+id/nextimageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+            android:layout_marginLeft="30dp"
+
+
+            android:layout_toRightOf="@+id/playbutton"
+            app:srcCompat="@drawable/next" />
+
+    </RelativeLayout>
+</LinearLayout>
+
+
+
+
+

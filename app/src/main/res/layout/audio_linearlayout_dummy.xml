@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+<TextView
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="bottom"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:id="@+id/chapternameTextView"
+    android:background="@color/red"
+    android:text="chapter 1:verse 1"
+    android:gravity="center"
+    android:textColor="@color/juz_text_blue"
+   />
+
+</RelativeLayout>

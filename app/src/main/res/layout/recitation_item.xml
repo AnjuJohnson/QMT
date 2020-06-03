@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="10dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:paddingBottom="5dp"
+    android:id="@+id/constraintlayout">
+        <ImageView
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/playsmall"
+          app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="2dp"
+
+            android:layout_marginLeft="5dp"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <TextView
+            android:id="@+id/chapternameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="8dp"
+android:layout_marginBottom="1dp"
+
+            android:text="TextView"
+
+            app:layout_constraintStart_toEndOf="@+id/play"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/chapterMeaningTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="1dp"
+
+            android:text="TextView"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@+id/chapternameTextView"
+            app:layout_constraintStart_toStartOf="@+id/chapternameTextView"
+            />
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/grey_line"
+  app:layout_constraintTop_toBottomOf="@+id/play"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:layout_marginTop="8dp"
+    />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+

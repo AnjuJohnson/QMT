@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/floating_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="200dp"
+    android:background="@color/black"
+    android:layout_gravity="bottom"
+    android:gravity="bottom"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/btn_chat"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:src="@drawable/play"
+        />
+
+</LinearLayout>

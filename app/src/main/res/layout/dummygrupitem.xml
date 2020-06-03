@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginTop="10dp"
+
+    android:orientation="vertical"
+    android:id="@+id/chapterlayout">
+
+    <ImageView
+        android:id="@+id/dropdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignTop="@+id/chapternameTextView"
+        android:layout_alignBottom="@+id/chapternameTextView"
+        app:srcCompat="@drawable/closed" />
+
+    <TextView
+        android:id="@+id/chapternameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_toEndOf="@+id/dropdown"
+        android:layout_toRightOf="@+id/dropdown"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/chapterMeaningTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/chapternameTextView"
+android:paddingBottom="10dp"
+        android:layout_toEndOf="@+id/dropdown"
+        android:layout_toRightOf="@+id/dropdown"
+        android:text="TextView"
+        android:textSize="12sp" />
+
+    <!--  <ImageView
+          android:id="@+id/imageView8"
+          android:layout_width="30dp"
+          android:layout_height="25dp"
+          android:layout_alignParentRight="true"
+          android:layout_marginTop="5dp"
+          android:layout_marginEnd="8dp"
+          android:layout_marginRight="8dp"
+  android:paddingTop="5dp"
+          android:paddingBottom="5dp"
+          app:srcCompat="@drawable/q_a" />
+  -->
+    <TextView
+        android:layout_marginRight="8dp"
+        android:id="@+id/arabic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/chapternameTextView"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+
+        android:text="TextView" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+android:background="#EEF7FF"
+android:id="@+id/optionslayout"
+        android:layout_below="@+id/chapterMeaningTextView"
+android:layout_marginTop="15dp"
+
+        >
+
+        <ImageView
+
+           android:layout_centerVertical="true"
+            android:id="@+id/versusimage"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/star"
+            android:layout_marginLeft="46dp"
+            android:paddingRight="5dp"
+
+            />
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/explanationimage"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/bookk"
+            android:layout_alignLeft="@+id/versusimage"
+            android:layout_marginLeft="46dp"
+            android:paddingRight="5dp"/>
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/indeximage"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/index"
+            android:layout_alignLeft="@+id/explanationimage"
+            android:layout_marginLeft="46dp"
+            android:paddingRight="5dp"/>
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/imageView8"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/qa"
+            android:layout_alignLeft="@+id/indeximage"
+            android:layout_marginLeft="46dp"
+            android:paddingRight="5dp"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>
+
+
+
+
+
+

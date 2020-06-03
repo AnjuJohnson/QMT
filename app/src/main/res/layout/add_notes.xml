@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/chapternameTextView"
+    app:layout_constraintStart_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:text="chapter 1:verse 1"
+    android:gravity="center"
+    android:textColor="@color/juz_text_blue"
+    android:layout_marginTop="20dp"/>
+<LinearLayout
+    android:layout_marginTop="10dp"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:background="@color/webviewbg"
+    app:layout_constraintTop_toBottomOf="@+id/chapternameTextView">
+
+    <EditText
+        android:inputType="textNoSuggestions|textMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/notesEditetext"
+android:layout_marginBottom="70dp"
+        android:paddingLeft="10dp"
+        android:layout_gravity="start"
+        android:hint="Type Your Notes"
+        android:gravity="start"
+        android:background="@color/transparent"
+        />
+
+</LinearLayout>
+
+
+    <TextView
+        android:id="@+id/mSaveTextView"
+        android:layout_width="126dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/mailsend_bg"
+        android:gravity="center"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

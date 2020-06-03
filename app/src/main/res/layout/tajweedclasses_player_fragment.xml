@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/drawerbg"
+    android:orientation="vertical">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:id="@+id/subtopicTextview"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:text=""
+    android:paddingLeft="20dp"
+    android:paddingBottom="20dp"
+    android:paddingTop="20dp"
+    android:textColor="@color/black"
+    android:background="@color/white"
+    app:layout_constraintTop_toTopOf="parent"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/webviewbg"
+        app:layout_constraintBottom_toTopOf="@+id/progress"
+        app:layout_constraintTop_toBottomOf="@+id/subtopicTextview">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toTopOf="@+id/progress"
+                app:layout_constraintTop_toBottomOf="@+id/subtopicTextview"
+                android:id="@+id/tajweedContent"
+
+                android:layout_marginBottom="20dp"
+                android:paddingLeft="20dp"
+                />
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+    <SeekBar
+        app:layout_constraintBottom_toTopOf="@+id/palyer"
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/palyer"
+        android:layout_marginBottom="20dp"
+        android:thumbTint="@color/white"
+        android:backgroundTint="@color/white" />
+
+    <RelativeLayout
+        android:id="@+id/palyer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/audio_bg_card"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/stopimageView"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+
+            android:layout_toLeftOf="@+id/previmageView"
+            app:srcCompat="@drawable/rectangle" />
+
+        <ImageView
+            android:id="@+id/previmageView"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@+id/playbutton"
+            app:srcCompat="@drawable/pre" />
+
+        <ImageView
+            android:id="@+id/playbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/playsmall" />
+
+        <ImageView
+
+            android:id="@+id/nextimageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+            android:layout_marginLeft="30dp"
+
+
+            android:layout_toRightOf="@+id/playbutton"
+            app:srcCompat="@drawable/next" />
+
+        <ImageView
+            android:id="@+id/repeatimageView"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/nextimageView"
+            app:srcCompat="@drawable/all" />
+        <TextView
+            android:id="@+id/repeatcounttextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="10dp"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@id/repeatimageView"></TextView>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+

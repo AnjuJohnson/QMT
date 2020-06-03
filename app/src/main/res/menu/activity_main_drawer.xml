@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <!--<item
+        android:id="@+id/mqa"
+        android:title="@string/qa"
+        />-->
+    <item
+        android:id="@+id/mquranindex"
+        android:title="Quran Index"
+        />
+    <item
+        android:id="@+id/mSettings"
+        android:title="Settings"
+        />
+    <item
+        android:id="@+id/mNotes"
+        android:title="Notes"
+        />
+    <item
+        android:id="@+id/mFav"
+        android:title="Favourites"
+        />
+    <item
+        android:id="@+id/mShare"
+        android:title="Share" />
+    <item
+        android:id="@+id/mTutorial"
+        android:title="Tutorial" />
+    <item
+        android:id="@+id/mFeedback"
+        android:title="Feedback" />
+    app:showAsAction="withText"/>
+</menu>

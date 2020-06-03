@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="5dp"
+    android:orientation="horizontal">
+<RelativeLayout
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/chaptername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:gravity="center|left"
+        android:paddingLeft="5dp"
+
+        android:text="cersse 1"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/juz_text_blue" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/delete"
+      android:layout_alignParentRight="true"
+        android:src="@drawable/notedelete"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"></ImageView>
+
+    <TextView
+        android:id="@+id/notestextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+android:text="ahgdhfgdf"
+        android:paddingLeft="5dp"
+      android:layout_marginRight="50dp"
+
+        ></TextView>
+
+</RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

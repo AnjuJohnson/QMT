@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:splitview="http://schemas.android.com/apk/res-auto"
+
+    android:background="@drawable/rectangle_bluebg"
+    >
+    <ImageView
+        android:background="@color/white"
+        android:id="@+id/ulquranImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+android:src="@drawable/mosque"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="50dp"></ImageView>
+
+    <com.Qubicle.QMT.utils.SplitView
+        xmlns:tool="http://schemas.android.com/tools"
+        android:id="@+id/split_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="80dp"
+
+        android:orientation="vertical"
+        splitview:handle="@+id/handle"
+        splitview:primaryContent="@+id/primary"
+        splitview:secondaryContent="@+id/inner_secondary"
+        tool:context=".MainActivity"
+        >
+
+        <LinearLayout
+
+            android:id="@+id/primary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:orientation="vertical">
+
+
+
+        </LinearLayout>
+
+        <ImageView
+
+            android:id="@+id/handle"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:src="@drawable/split"
+            android:elevation="0dp"
+             />
+        <LinearLayout
+            android:background="@color/juz_text_blue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="3">
+
+            <TextView
+                android:id="@+id/inner_secondary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="left"
+                android:layout_gravity="bottom"
+                android:text=""
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </com.Qubicle.QMT.utils.SplitView>
+
+    <RelativeLayout
+        android:id="@+id/palyer"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/audio_bg_card"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <SeekBar
+           android:layout_alignParentTop="true"
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="40dp"
+            android:thumbTint="@color/white"
+            android:backgroundTint="@color/white" />
+
+
+        <ImageView
+            android:id="@+id/stopimageView"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+
+            android:layout_toLeftOf="@+id/previmageView"
+            android:src="@drawable/rectangle" />
+
+        <ImageView
+            android:id="@+id/previmageView"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@+id/playbutton"
+            android:src="@drawable/pre" />
+
+        <ImageView
+            android:id="@+id/playbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/playsmall" />
+
+        <ImageView
+
+            android:id="@+id/nextimageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+            android:layout_marginLeft="30dp"
+
+
+            android:layout_toRightOf="@+id/playbutton"
+            android:src="@drawable/next" />
+
+        <ImageView
+            android:id="@+id/repeatimageView"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/nextimageView"
+            android:src="@drawable/all" />
+        <TextView
+            android:id="@+id/repeatcounttextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_marginTop="15dp"
+            android:textSize="10dp"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@id/repeatimageView"></TextView>
+    </RelativeLayout>
+</FrameLayout>
+

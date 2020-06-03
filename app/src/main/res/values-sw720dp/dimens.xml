@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="font_heading">10sp</dimen>
+    <dimen name="nav_user">14sp</dimen>
+    <dimen name="tab_margin_left">200dp</dimen>
+    <dimen name="frametab_top">130dp</dimen>
+</resources>

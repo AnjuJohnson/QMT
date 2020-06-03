@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">QMT</string>
+    <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="user">User</string>
+    <string name="db_name">Qmt</string>
+    <string name="qa">Quran Q &amp; A</string>
+    <string name="vishadeekaranm">വിശദീകരണം</string>
+    <string name="vyakyanakurip">വ്യാഖ്യാനകുറിപ്പ്‌</string>
+    <string name="bismi">بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيم</string>
+    <string name="verse">തന്റെ രക്ഷിതാവിങ്കല്‍ നിന്ന്‌ തനിക്ക്‌ അവതരിപ്പിക്കപ്പെട്ടതില്‍ റസൂല്‍ വിശ്വസിച്ചിരിക്കുന്നു. (അതിനെ തുടര്‍ന്ന്‌) സത്യവിശ്വാസികളും. അവരെല്ലാം അല്ലാഹുവിലും, അവന്റെ മലക്കുകളിലും അവന്റെ വേദഗ്രന്ഥങ്ങളിലും, അവന്റെ ദൂതന്‍മാരിലും വിശ്വസിച്ചിരിക്കുന്നു. അവന്റെ ദൂതന്‍മാരില്‍ ആര്‍ക്കുമിടയില്‍ ഒരു വിവേചനവും ഞങ്ങള്‍ കല്‍പിക്കുന്നില്ല. (എന്നതാണ്‌ അവരുടെ നിലപാട്‌.) അവര്‍ പറയുകയും ചെയ്തു: ഞങ്ങളിതാ കേള്‍ക്കുകയും അനുസരിക്കുകയും ചെയ്തിരിക്കുന്നു. ഞങ്ങളുടെ നാഥാ! ഞങ്ങളോട്‌ പൊറുക്കേണമേ. നിന്നിലേക്കാകുന്നു (ഞങ്ങളുടെ) മടക്കം.(285)</string>
+
+
+
+
+
+</resources>
